@@ -1,0 +1,19 @@
+role: 
+ - type: VISITOR
+   dn: nam
+   attrs: 
+    - pr: clientid=12345,httpMethod=POST
+      sc: hello=world
+      scf: com.mbr.TestFunction
+    - pr: clientid=54321,httpMethod=GET
+      sc: world=hello
+      scf: com.mbr.FunctionTest
+ - type: DEMOTED_CUSTOMER
+   dn: eur
+   attrs: 
+    - pr: clientid=12345,httpMethod=POST
+      sc: hello=world
+      scf: com.mbr.TestFunction
+    - pr: clientid=54321,httpMethod=GET
+      sc: world=hello
+      scf: com.mbr.FunctionTest    

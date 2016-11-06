@@ -1,0 +1,18 @@
+role: 
+ - type: ADMIN
+   dn: nam
+   attrs: 
+    - pr: ip=*.20.*.*
+    - pr: ip=192.*.*.*
+
+ - type: ADMIN
+   dn: eur
+   attrs: 
+    - pr: ip=*.50.*.*
+    - pr: ip=255.*.*.*
+      
+ - type: READ_WRITE
+   dn: nam
+   attrs: 
+    - pr: ip=10.120.10.1?0
+    - pr: ip=10.2?.*.1?0

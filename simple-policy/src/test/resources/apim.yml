@@ -1,0 +1,18 @@
+role: 
+ - type: ALL
+   dn: entry
+   attrs: 
+    - pr: siteid=MY_DEPOT,clientId=123456??9,secretkey=NEWBRUNSWICK
+      sc: bizTokenCheck=true
+      scf: com.mbr.platform.policy.intf.impl.BizTokenCheck
+    - pr: siteid=MY_TORO,clientId=987654321,secretkey=AUSTIN
+    - pr: siteid=MY_BestBuy,clientId=99019901,secretkey=TOKYOBAY
+      
+ - type: ALL
+   dn: exit
+   attrs: 
+    - pr: httpCode=200
+    - pr: httpCode=304
+    - pr: httpCode=401
+    - pr: httpCode=403
+    - pr: httpCode=500   
